@@ -2,6 +2,7 @@
 .DS_Store
 
 temp/
+tmp/
 
 pyproject.toml
 uv.lock
@@ -11,3 +12,40 @@ uv.lock
 main.py
 
 __pycache__/
+
+docs/personal*
+
+# Environment and credential files
+.env
+.env.*
+.envs
+!.env.example
+*.env
+config.yaml
+config.yml
+*credentials*
+*secrets*
+api_keys.txt
+api_keys.json
+
+# Personal scripts and customizations
+scripts/
+
+# Authentication and security
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+
+# API-specific configs
+cosmic_credentials.txt
+benchling_config.json
+labarchives_config.yaml
+omero_config.ini
+
+# Temporary and cache files
+*.swp
+*.swo
+*~
+.cache/
